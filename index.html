@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Petição</title>
+</head>
+<body>
+
+    <div class="campo">
+        <h1 id="título1">Pesquisa de afiliação</h1>
+        <p id="subtítulo">Complete suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"> <strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label required>
+                <input type="text" name="email" id="email">
+            </div>
+
+        </fieldset>
+       
+        <div class="campo">
+            <fieldset id="grupo">
+            <label for="orientação"><strong>Qual sua orientação política?</strong></label>
+            <label>
+                <input type="radio" name="política" value="esquerda" checked>Esquerda
+                <input type="radio" name="política" value="direita">Direita
+                <input type="radio" name="política" value="centroesquerda">Centro esquerda
+                <input type="radio" name="política" value="centrodireita">Centro direita
+            </label>
+        </fieldset>
+        </div>
+
+    <fieldset id="grupo">
+        <label><strong>De onde você fala?</strong></label>
+        <select id="região">
+            <option selected disabled value="" >Região...</option>
+            <option>Norte</option>
+            <option>Sul</option>
+            <option>Leste</option>
+            <option>Oeste</option>
+            <option>Centro-oeste</option>
+        </select>
+    </fieldset>
+
+        <br>
+
+        <fieldset id="grupo">
+            <div id=check>
+                <label><strong>Selecione seu(s) partido(s) de preferência:</strong></label>
+                <input type="checkbox" name="partido1" id="partido1" value="PSDB">
+                <label for="partido1">PSDB</label>
+                <input type="checkbox" name="partido2" id="partido2" value="PT">
+                <label for="partido2">PT</label>
+                <input type="checkbox" name="partido3" id="partido3" value="PMDB">
+                <label for="partido3">PMDB</label>
+                <input type="checkbox" name="partido4" id="partido4" value="PCdoB">
+                <label for="partido4">PCdoB</label>
+                <input type="checkbox" name="partido5" id="partido5" value="PSOL">
+                <label for=partido5>PSOL</label>
+                </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+
+            <label><strong>Deixe sua opinião sobre o governo atual</strong></label>
+            <textarea style="resize: none" row="10" type="width: 16px" name="opinião" id="opinião"></textarea>
+        </div>
+
+        <br>
+        
+        <button class="botão" type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
